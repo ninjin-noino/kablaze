@@ -97,6 +97,7 @@ func main() {
 			pl("Josh: Oh! Holy shit! You're the first person I've met that actually plays the game!")
 			sleeps(2)
 			pl(name + ": Haha, yea, not a lot of people know about it, and even less play it.")
+			//Im gay
 		} else {
 			sleeps(2)
 			pl("Josh: Aw.. Damn.. I really wante to meet someone else that played it..")
