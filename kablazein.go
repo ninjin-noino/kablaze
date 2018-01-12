@@ -12,27 +12,19 @@ import (
 )
 
 func main() {
-	p("Hello! Welcome to the world of kablaze.\nThe game is still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord, or open an issue on Github.\nThank you <3\n\nThe game will start in 5 seconds")
-	sleeps(1)
-	p(".")
-	sleeps(1)
-	p(".")
-	sleeps(1)
-	p(".")
-	sleeps(1)
-	p(".")
-	sleeps(1)
+	pl("Hello! Welcome to my little Go game.\nIt's still unfinished, so if you find any bugs, please report them to cmyui#5585 on discord.\nThank you <3\n\nThe game will start in 5 seconds..")
+	sleeps(5)
 	CallClear()
-	pl("You're sitting on an old park bench in Gage Park, Brampton, Ontario.. Wearing a heavy jacket, some jeans and boots, you\ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos..\nA man in a hoodie and slick black sweatpants approaches you..")
+	pl("You're sitting on an old park bench in Gage Park in Brampton, Ontario.. Wearing a heavy jacket, some jeans and boots, you\ngot bored of walking around and enjoying the scenery. You take out your phone and begin watching some YouTube videos..\nA man in a hoodie and slick black sweatpants approaches you..")
 	td()
 	sleeps(5)
-	pl("??: Hey, do you happen to know what time it is?")
+	pl("??: Hey, do you know what time it is?")
 	sleeps(2)
 	pl("Me: Oh yea, its uhh.. 12:35")
 	sleeps(2)
 	pl("??: Awesome, thanks")
 	sleeps(2)
-	pl("He sits down beside you.. He's quite sweaty and looks like he just finished his run..")
+	pl("He sits down beside you.. He's quite sweaty and looks like he just finished run..")
 	td()
 	sleeps(2)
 	pl("??: Oh, sorry for not introducing myself. I'm Josh..")
@@ -54,25 +46,9 @@ func main() {
 		end()
 	}
 	pl(name + ": Nice to meet you too!")
-	sleeps(2)
-	pl("He looks like he's in his mid teens.. Probably goes to a school around here..")
-	sleeps(2)
-	pl("Josh: Are you from around here?")
-	sleeps(2)
-	pl(name + ": Nope, I'm actually from out of town, but I'm here to see family for the holidays..")
-	sleeps(2)
-	pl("Josh: Ah.. I see..")
 	sleeps(1)
-	pl("He takes a swig from his water bottle, and peers off into the distance, still catching his breath..")
-	sleeps(2)
-	pl("Josh: I was just curious because I've never seen you around here, and I run daily, haha")
-	sleeps(2)
-	pl(name + ": Oh yea? That's pretty cool.. Especially at your age. It's really good to get into those sortof habits, I wish i did had done that haha..")
-	sleeps(2)
-	pl("Josh: Yea, I got into the habit of doing it a few months ago, and never stopped. It feels really nice once you get used to it..")
-	sleeps(2)
 	td()
-	pl("Josh: Mm.. Sorry if this seems out of context, but have you ever heard of a game called osu?")
+	pl("Josh: Mm.. Sorry if this seems out of the blue, but have you ever played osu?")
 	sleepm(600)
 	var playOsuString string
 	p(name + ": ")
@@ -93,16 +69,17 @@ func main() {
 		playOsu = strings.ToLower(playOsu)
 
 		if playOsu[0] == 'y' {
+			pl("His eyes light up.")
+			sleeps(1)
+			pl("Josh: You're the first person I've met that actually plays the game!")
 			sleeps(2)
-			pl("Josh: Oh! Holy shit! You're the first person I've met that actually plays the game!")
-			sleeps(2)
-			pl(name + ": Haha, yea, not a lot of people know about it, and even less play it.")
-			//Im gay
+			pl(name + ": Haha, yea, not a lot of people know about it, or play it.")
 		} else {
+			pl("He frowns a little.")
 			sleeps(2)
-			pl("Josh: Aw.. Damn.. I really wante to meet someone else that played it..")
+			pl("Josh: Oh.")
 			sleeps(3)
-			pl("Josh: Anyways.. I've got to head home. See you around!")
+			pl("Josh: Well, I gotta go. See you around!")
 			sleepm(1500)
 			pl(name + ": Yea dude, have a good one!")
 			sleeps(1)
@@ -110,16 +87,18 @@ func main() {
 		}
 	} else {
 		sleeps(2)
-		pl("Josh: Aw.. Damn.. I really wanted to meet someone else that played it..")
+		pl("Josh: Oh..")
+		sleeps(1)
+		pl("He looks disappointed and you can feel the air between you two become more tense and awkward.")
 		sleeps(2)
-		pl("Josh: Anyways.. I've got to head home. See you around!")
+		pl("Josh: Uh... Well, I gotta go. See you around!")
 		sleepm(1500)
 		pl(name + ": Yea dude, have a good one!")
 		sleeps(1)
 		softEnd()
 	}
 	sleepm(1500)
-	pl("Josh: So, since we both play osu!.. Who's your favourite player?")
+	pl("Josh: So.. Who's your favourite player?")
 	sleepm(600)
 	p(name + ": ")
 	var favourite string
@@ -133,6 +112,8 @@ func main() {
 		kill = false
 		sleeps(1)
 		td()
+		pl("You can tell that you've peaked his interest.")
+		sleeps(1)
 		pl("Josh: Wait.. what?")
 		sleeps(2)
 		pl("Josh: Really..?")
@@ -141,10 +122,11 @@ func main() {
 		sleeps(2)
 		pl("Josh: I think he's a really unrated and undervalued player overall..")
 		sleeps(3)
-		pl("Josh: Well, thats sortof his fault.. He doesn't really put himself 'out there' very much..")
+		pl("Josh: Well, thats sort of his fault.. He doesn't really put himself 'out there' very much..")
 		sleeps(2)
 	case "cookiezi":
 		kill = false
+		pl("He chuckles a little.")
 		pl("Josh: Haha. Yea, I definitely can't blame you for that one. I definitely think hes the BEST player,")
 		sleeps(1)
 		pl("Josh: Although, he's not my favourite..")
@@ -153,10 +135,12 @@ func main() {
 		pl("Josh: :^)")
 	case "solis":
 		kill = false
+		pl("He smirks.")
 		pl("Josh: oh yeah dude solis is my favourite relax cheater too :^)")
 	case "cmyui":
 	case "chase":
 		kill = false
+		pl("He smiles and blushes a little."
 		pl("Josh: <3")
 	case "rafis", "azerite", "zirba", "bubbleman",
 		"rohulk", "angelsim", "emilia", "woey", "osu player84", "mathi",
@@ -165,9 +149,9 @@ func main() {
 		"_index", "index", "karthy", "yaong", "digitalhypno", "toy", "aireu",
 		"wubwoofwolf", "talala", "resia", "adamqs", "wilchq", "mouseeasy",
 		"flyingtuna", "thepoon", "recia", "dumii", "mlaw22", "mlaw", "mshake",
-		"xilver", "ceptin", "plz enjoy game", "apraxia", "doomsday", "vaxei",
-		"filsdelama", "dustice":
+		"xilver", "ceptin", "plz enjoy game", "apraxia", "doomsday":
 		kill = false
+		pl("He 
 		pl("Josh: Yea, I can't blame you for that. He's extremely talented. Although..")
 		sleeps(1)
 		pl("Josh: He's not my favourite, but he's definitely up there.")
@@ -421,30 +405,23 @@ func main() {
 	sleeps(1)
 	pl("I open my door, take a seat and turn on my PC.")
 	sleeps(1)
-	pl("Mmm.. It's been a long day..")
-	sleeps(2)
-	pl("Discord opens up, and I head to the Friends section, and see that cmyui#5585 has already added me as a friend.")
-	sleeps(2)
-	pl("I accept the request, and send him a PM saying 'Hey, long time no see, haha'")
+	pl("Minutes pass and my mind is still lingering on what Josh could have meant when he said he was surprised I made it this far.")
 	sleeps(3)
-	pl("5 minutes passes, and still no reply.. I assume he must be busy doing something, so I open up osu!")
+	pl("Putting that thought on the back burner, I decide to take off steam with some osu.")
 	sleeps(2)
-	switch digit {
-	case 6:
-		pl("I've really been improving recently, even though im only a 6 digit, I think that I might be able to climb again now..")
-	case 5:
-		pl("I've really been improving recently, even though im only a 5 digit, I think that I might be able to climb again now..")
-	case 4:
-		pl("I've really been improving recently, even though im a 4 digit, I think that I might be able to climb again now..")
-	case 3:
-		pl("I've really been improving recently, even though im already decent.. I think that I might be able to climb again now..")
-	case 2:
-		pl("I've really been improving recently, even though im already so high in the rankings.. I think that I might be able to climb again now..")
-	}
+	pl("As Discord automatically opens, I notice that cmyui#5585 has already sent me a friend request.")
 	sleeps(2)
-	pl("osu! boots up, and I realize that I never actually got to know how good Josh was..")
+	pl("I accept the request, and send him a PM saying 'Hey, long time no see.'")
+	sleeps(3)
+	pl("5 minutes pass, and still no reply.. Maybe messaging him in-game would work?")
 	sleeps(2)
-	pl("I hit F9 and search up his name, and sure enough, there he is. A 4 digit, rank #3482.")
+	pl("osu loads, I search for 'cmyui'. Oh, he's online and playing Chrono Diver. Good map.")
+	sleeps(2)
+	pl("I spend a few minutes thinking of my approach and finally begin typing as he finishes the map.")
+	sleeps(2)
+	pl("Y'know, I never actually got to know how good Josh was..")
+	sleeps(2)
+	pl("Might as well spectate before sending anything.")
 	sleeps(2)
 	switch digit {
 	case 6:
@@ -460,9 +437,7 @@ func main() {
 	}
 	sleeps(2)
 	//Oh maybe I'll make this something identity theft something something idk im winging this while writing it.
-	pl("Hes playing a song, I guess that's why he didnt reply on discord.. Although that song is only a minute long.. weird..")
-	sleeps(2)
-	pl("I send him a PM ingame")
+	pl("After watching him for a few minutes, I finally send a message.")
 	sleeps(2)
 	pl(name + ": Hey!")
 	sleeps(2)
@@ -480,7 +455,7 @@ func main() {
 	sleeps(4)
 	pl("...")
 	sleeps(1)
-	pl("Huh? how is this not him?")
+	pl("Huh? How is this not him?")
 	sleepm(1500)
 	pl("cmyui: Also.. the person on discord was me aswell, I think you might have the wrong username or something?")
 	sleepm(500)
@@ -502,7 +477,7 @@ func main() {
 	sleeps(5)
 	pl("He doesn't reply..")
 	sleeps(2)
-	pl("I'm beyond confused at this point..")
+	pl("What the fuck is going on?")
 	sleeps(2)
 	realEnd()
 }
